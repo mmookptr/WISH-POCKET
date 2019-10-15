@@ -4,7 +4,10 @@
   "description": "Wishlist and Money pocket application",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && tsc",
+    "lint": "tslint --project tsconfig.json",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
+    "start": "node ./dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/mmookptr/WISH-POCKET/issues"
   },
-  "homepage": "https://github.com/mmookptr/WISH-POCKET#readme"
+  "homepage": "https://github.com/mmookptr/WISH-POCKET#readme",
+  "dependencies": {
+    "ts-node": "^8.4.1",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.4"
+  }
 }
