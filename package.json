@@ -7,7 +7,7 @@
     "build": "rm -rf dist && tsc",
     "lint": "tslint --project tsconfig.json",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/app.ts",
-    "start": "node ./dist/app.js"
+    "start": "npm run build && node ./dist/app.js"
   },
   "repository": {
     "type": "git",
