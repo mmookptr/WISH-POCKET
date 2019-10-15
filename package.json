@@ -1,0 +1,24 @@
+{
+  "name": "wish-pocket",
+  "version": "1.0.0",
+  "description": "Wishlist and Money pocket application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmookptr/WISH-POCKET.git"
+  },
+  "keywords": [
+    "wishlist",
+    "money",
+    "application"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmookptr/WISH-POCKET/issues"
+  },
+  "homepage": "https://github.com/mmookptr/WISH-POCKET#readme"
+}
