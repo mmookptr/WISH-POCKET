@@ -10,17 +10,16 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const cors = require("./cors");
 //databse stuff
-mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost/wishpocket-server', { useNewUrlParser:true })
-mongoose.set('useFindAndModify',false)
+mongoose.Promise = global.Promise;
+mongoose.connect("mongodb://localhost/wishpocket-server", {
+  useNewUrlParser: true
+});
+mongoose.set("useFindAndModify", false);
 
-app.use(bodyParse.urlencoded({ extended: true }))
-app.use(bodyParser.json() )
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 // cors(app)
 // routes(app)
-app.listen(port)
-console.log('WI$H POCKET server is running at port '+port)
-
-
-
+app.listen(port);
+console.log("WI$H POCKET server is running at port " + port);

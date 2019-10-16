@@ -4,7 +4,8 @@
   "description": "A server side of WI$H POCKET application",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
