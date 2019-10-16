@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/mmookptr/WISH-POCKET/issues"
   },
-  "homepage": "https://github.com/mmookptr/WISH-POCKET#readme"
+  "homepage": "https://github.com/mmookptr/WISH-POCKET#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
