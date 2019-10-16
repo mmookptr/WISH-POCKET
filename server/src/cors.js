@@ -7,7 +7,7 @@ module.export = function(app) {
       if (process.env.CORS_WHITELIST.split("").indexOf(origin) !== -1) {
         callback(null, true);
       } else {
-        callback(new Error("Not allowed by CORS"));
+        callback(new Error("Not allowed by CORS config"));
       }
     },
     methods: "GET, HEAD, PUT, PATCH, POST, DELETE"
