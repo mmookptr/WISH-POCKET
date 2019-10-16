@@ -1,17 +1,17 @@
-// for cross site scripting
-module.export = function(app) {
-  const cors = require("cors");
-  const corOption = {
+'use strict';
+
+module.exports = function(app) {
+  const cors = require('cors')
+  const corsOptions = {
     origin: function(origin, callback) {
-      //if in cors whitelist will allow otherwise
-      if (process.env.CORS_WHITELIST.split("").indexOf(origin) !== -1) {
-        callback(null, true);
+      if (process.env.CORS_WHITELIST.split(' ').indexOf(origin) !== -1) {
+        callback(null, true)
       } else {
-        callback(new Error("Not allowed by CORS config"));
+        callback(new Error('Not allowed by CORS configuration'))
       }
     },
-    methods: "GET, HEAD, PUT, PATCH, POST, DELETE"
-  };
-  app.option("*", cors(corsOptions));
-  app.use(cors(corsOptions));
-};
+    methods: "GET, HEAD, PUT, PATCH, POST, DELETE",
+  }
+  app.options('*', cors(corsOptions))
+  app.use(cors(corsOptions))
+}

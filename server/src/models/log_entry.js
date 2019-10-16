@@ -4,21 +4,25 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const LogEntrySchema = new Schema({
-  no: {
+  PocketID: {
     type: Number,
     required: true
   },
-  income: {
-    type: Number,
-    required: true
-  },
-  fixedutcome: {
-    type: Number,
-    required: true
-  },
-  wishlist: {
+  Owner: {
     type: String,
-    default: ""
+    required: true
+  },
+  Bank: {
+    type: Number,
+    required: true
+  },
+  Wish: {
+    type: String,
+    required: true
+  },
+  Outcome: {
+    type: Number,
+    required: true
   }
 });
 
