@@ -1,0 +1,31 @@
+{
+  "name": "wishpocket-server",
+  "version": "1.0.0",
+  "description": "A server side of WI$H POCKET application",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmookptr/WISH-POCKET.git"
+  },
+  "keywords": [
+    "expenditure",
+    "wishlist",
+    "money",
+    "application"
+  ],
+  "author": "Sidtipat,Patteera,Pakkapon,Nattaphon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmookptr/WISH-POCKET/issues"
+  },
+  "homepage": "https://github.com/mmookptr/WISH-POCKET#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5"
+  }
+}
